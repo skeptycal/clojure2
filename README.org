@@ -1,0 +1,30 @@
+* Website
+
+This is my about me page, available at pwalsh.me
+
+** Quickstart
+
+Dependencies:
+
+#+BEGIN_SRC sh
+make install
+#+END_SRC
+
+Development:
+
+#+BEGIN_SRC sh
+make watch
+make serve
+#+END_SRC
+
+Build:
+
+#+BEGIN_SRC sh
+make build
+#+END_SRC
+
+Deploy:
+
+#+BEGIN_SRC sh
+make deploy
+#+END_SRC
