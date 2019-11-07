@@ -1,4 +1,4 @@
-(defproject website "0.1.0-SNAPSHOT"
+(defproject website "0.1.0"
   :description "This is my about me page, available at pwalsh.me"
   :url "https://pwalsh.me"
   :license {:name "BSD 3 Clause"
