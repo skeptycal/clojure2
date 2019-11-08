@@ -20,6 +20,7 @@
         "popper.js": "^1.16.0"
     },
     "devDependencies": {
+        "lodash.template": ">=4.5.0",
         "autoprefixer": "^9.7.1",
         "css-loader": "^1.0.1",
         "file-loader": "^2.0.0",
