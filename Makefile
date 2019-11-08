@@ -1,4 +1,4 @@
-.PHONY: help install-backend install-frontend install build-frontend build-backend build watch serve deploy test
+.PHONY: help install-backend install-frontend install build-frontend build-backend build watch serve deploy github test
 
 .DEFAULT_GOAL := help
 
