@@ -8,10 +8,10 @@
 # license   - MIT <https://opensource.org/licenses/MIT>
 # github    - https://www.github.com/skeptycal
 
-make build
 mkdir -p docs
-cp -r output/* docs/
+cp -r output/ docs/
+
 [[ -s docs/_config.yml ]] || echo "theme: jekyll-theme-slate" >docs/_config.yml
-git add all
+git add --all
 git commit -m 'deploy_gh.sh - build and deploy'
 git push
