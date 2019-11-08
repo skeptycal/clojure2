@@ -32,7 +32,7 @@ deploy: ## Deploy static website assets to a Google Cloud Storage bucket.
 	gcloud components update --quiet
 	gsutil rsync -d -r output gs://xxxxxxxx.xxx
 
-deploy_github: ## Deploy static site to /docs folder of github repo
+github: ## Deploy static site to /docs folder of github repo
 	deploy_gh.sh
 
 ci-deploy: ##

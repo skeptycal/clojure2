@@ -60,6 +60,11 @@ Build:
 make build
 ```
 
+Deploy to GitHub Pages:
+```bash
+make github
+```
+
 Deploy to Google Cloud (account required):
 
 ```bash
@@ -69,5 +74,6 @@ make deploy
 ### Contributions
 
 [Bug Reports](.github/ISSUE_TEMPLATE/bug_report.md)
+
 [Feature Requests](.github/ISSUE_TEMPLATE/feature_request.md)
 
