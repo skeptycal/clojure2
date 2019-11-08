@@ -60,7 +60,7 @@ Build:
 make build
 ```
 
-Deploy:
+Deploy to Google Cloud (account required):
 
 ```bash
 make deploy
