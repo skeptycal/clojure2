@@ -1,8 +1,8 @@
-{:domain "pwalsh.me"
- :name "Paul Walsh"
+{:domain "www.skeptycal.com"
+ :name "Michael Treanor"
  :image "http://s.gravatar.com/avatar/979074df9b79dcce98b78c20dfc2337b?s=240"
- :github "https://github.com/pwalsh"
- :twitter "https://twitter.com/_pwalsh"
- :keybase "https://keybase.io/pwalsh"
- :email "mailto:paul@walsh.co.il"
- :gpgkey "https://keybase.io/pwalsh/pgp_keys.asc"}
+ :github "https://github.com/skeptycal"
+ :twitter "https://twitter.com/skeptycal"
+ :keybase "https://keybase.io/skeptycal"
+ :email "mailto:skeptycal@gmail.com"
+ :gpgkey "https://keybase.io/skeptycal/pgp_keys.asc"}

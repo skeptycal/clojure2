@@ -1,6 +1,6 @@
 * Website
 
-This is my about me page, available at pwalsh.me
+This is my about me page, available at www.skeptycal.com
 
 ** Quickstart
 

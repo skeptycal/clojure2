@@ -1,6 +1,6 @@
-(defproject website "0.1.0"
-  :description "This is my about me page, available at pwalsh.me"
-  :url "https://pwalsh.me"
+(defproject website "1.1.0"
+  :description "This is my about me page, available at www.skeptycal.com"
+  :url "https://www.skeptycal.com"
   :license {:name "BSD 3 Clause"
             :url "http://opensource.org/licenses/BSD-3-Clause"}
   :dependencies [[org.clojure/clojure "1.10.0"]
