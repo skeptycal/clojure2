@@ -62,6 +62,7 @@ make build
 
 Deploy to GitHub Pages:
 ```bash
+make build
 make github
 ```
 
@@ -72,6 +73,8 @@ make deploy
 ```
 
 ### Contributions
+
+[Code of Conduct](CODE_OF_CONDUCT.md)
 
 [Bug Reports](.github/ISSUE_TEMPLATE/bug_report.md)
 
