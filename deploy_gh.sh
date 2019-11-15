@@ -13,6 +13,7 @@ cp -r output/ docs/
 
 ###### minor tweaks may be necessary; make changes to files in docs/ if needed
 
+make github
 [[ -s docs/_config.yml ]] || echo "theme: jekyll-theme-slate" >docs/_config.yml
 git add --all
 git commit -m 'deploy_gh.sh - build and deploy'

@@ -81,29 +81,29 @@ read site_name
 
 # collect GitHub user name (default from git config)
 git_name=$(git config user.name)
-echo -n "Enter your GitHub username (default $git_name): "
+echo -n "Enter your GitHub username (default: $git_name): "
 read user_name
 [[ -z $user_name ]] && user_name=$git_name
 
 repo_name="https://github.com/${user_name}/${site_name}"
 
 ###############################################################################
-# setup repo
+# Setup project git repo
+# choose a repo name for your 'about me' page
 git clone https://github.com/skeptycal/clojure_site $site_name
 cd $site_name
+
 # Rename remote repo. if you wish to remove the remote, use this:
 #   git rm -rf .git && git init
-remote rename origin upstream
-rm -rf .git
-git init
+git remote rename origin upstream
 hub create
 git add all
 git commit -m 'initial commit'
 git push --set-upstream origin $(git_current_branch)
-
-npm install
-npm audit fix
+attn 'Github remote repositories:'
+git remote -v
 
 make install
+npm audit fix
 
 . ./deploy_gh.sh
