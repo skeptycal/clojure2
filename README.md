@@ -1,5 +1,11 @@
 # Michael Treanor
 
+[![netlify badge](https://api.netlify.com/api/v1/badges/416b8ca3-82db-470f-9adf-a6d06264ca75/deploy-status)](https://app.netlify.com/sites/mystifying-keller-ab5658/deploys) [![Build Status](https://travis-ci.com/skeptycal/clojure_site.svg?branch=master)](https://travis-ci.com/skeptycal/clojure_site) ![https://pypi.python.org/pypi/autosys](https://img.shields.io/badge/test_coverage-100%25-6600CC.svg)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+
+![Twitter Follow](https://img.shields.io/twitter/follow/skeptycal.svg?label=%40skeptycal&style=social) ![GitHub followers](https://img.shields.io/github/followers/skeptycal.svg?style=social) ![Keybase PGP](https://img.shields.io/keybase/pgp/skeptycal?label=Keybase%20PGP&style=social)
+
 > This is my about me page, available on [GitHub](https://skeptycal.github.io/clojure_site/). It was made using a [Webpack](https://webpack.js.org/) and Clojure. [Why Clojure?](https://clojure.org/about/rationale)
 
 <img src="resources/images/webpack.png" alt="webpack logo" height=50> <img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50>
