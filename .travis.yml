@@ -1,12 +1,22 @@
 # Travis CI scripts (clojure)
 language: clojure
-lein: lein
+sudo: required
+lein: lein 2.8
+
+before_install:
+  - sudo rm "${JAVA_HOME}/lib/security/cacerts"
+  - sudo ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"
 
 matrix:
   include:
     - jdk: openjdk8
+      before_install: &fix_install
+        - sudo chmod +x ./travis/bootstrap.sh
+        - sudo ./travis/setup-lein-travis.sh
     - jdk: openjdk9
       before_install: &fix_certs
+        - sudo chmod +x ./travis/bootstrap.sh
+        - sudo ./travis/setup-lein-travis.sh
         - sudo rm "${JAVA_HOME}/lib/security/cacerts"
         - sudo ln -s /etc/ssl/certs/java/cacerts "${JAVA_HOME}/lib/security/cacerts"
     - jdk: openjdk10
@@ -20,7 +30,7 @@ install: lein deps &&
   lein build &&
   npx webpack --display errors-only
 
-script: lein do clean, check, test
+script: travis_retry env JAVA_HOME=/usr/lib/jvm/java-8-oracle/bin/java lein do clean, check, test
 
 after_success:
   # Upload coverage data to codecov
