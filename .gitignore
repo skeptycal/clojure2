@@ -9,6 +9,8 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+*.bak
+*private*
 
 .DS_Store
 node_modules/

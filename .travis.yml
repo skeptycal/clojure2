@@ -1,0 +1,22 @@
+# Travis CI scripts (python)
+# Python script
+language: minimal
+
+# command to install dependencies
+install: lein deps
+  npm install
+  lein build
+  npx webpack --display errors-only
+
+script: lein test
+after_success:
+  # Upload coverage data to codecov
+  - codecov
+notifications:
+  # irc:
+  #   channels: "irc.freenode.org#xxxxx"
+  #   template:
+  #     - "%{repository_name}@%{branch}: %{message} (%{build_url})"
+  #   on_success: change
+  #   on_failure: change
+  email: skeptycal@gmail.com
