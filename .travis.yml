@@ -24,9 +24,9 @@ matrix:
       before_install: *fix_certs
 
 # command to install dependencies
-install: lein deps
-  npm install
-  lein build
+install: lein deps &&
+  npm install &&
+  lein build &&
   npx webpack --display errors-only
 
 script: lein do clean, check, test
