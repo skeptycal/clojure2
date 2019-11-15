@@ -25,6 +25,7 @@ Make sure you have. Any version will likely work fine ...
 | [hub](https://hub.github.com/)                        | 2.12.8           |
 
 If you run into permission problems with npm (not just with this project ... this is a problem with many non-rvm installs), run this terminal command to make sure npm global repo permissions are sufficient:
+
 `sudo chown -R $(id -un):$(id -gn) $(npm root -g)`
 
 ## Quickstart (macOS)
