@@ -1,19 +1,10 @@
 # Travis CI scripts (clojure)
 language: clojure
 lein: lein
-jdk:
-  - openjdk8
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk9
-  - openjdk10
-  - openjdk11
 
 matrix:
   include:
     - jdk: openjdk8
-    - jdk: oraclejdk8
-    - jdk: oraclejdk9
     - jdk: openjdk9
       before_install: &fix_certs
         - rm "${JAVA_HOME}/lib/security/cacerts"
