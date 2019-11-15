@@ -14,8 +14,8 @@ Make sure you have. Any version will likely work fine ...
 | [Git](https://git-scm.com/downloads)                  | 2.23.0           |
 | [hub](https://hub.github.com/)                        | 2.12.8           |
 
-run this terminal command to make sure npm global repo permissions are sufficient:
-    `chown -R $(whoami):staff $(npm root -g)`
+If you run into permission problems with npm (not just with this project ... this is a problem with many non-rvm installs), run this terminal command to make sure npm global repo permissions are sufficient:
+    `sudo chown -R $(id -un):$(id -gn) $(npm root -g)`
 
 ### Quickstart
 
@@ -64,6 +64,7 @@ Deploy to GitHub Pages:
 ```bash
 make build
 make github
+
 ```
 
 Deploy to Google Cloud (account required):

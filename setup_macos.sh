@@ -41,20 +41,21 @@ checkit() {
     else
         attn "$prog_name already installed."
     fi
-}
-
+    }
 ###############################################################################
 # install or update Homebrew
-if [[ $(command -v brew) == "" ]]; then
-    green "Installing Hombrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-    green "Updating Homebrew"
-    brew update
-fi
-
+check_brew() {
+    if [[ $(command -v brew) == "" ]]; then
+        green "Installing Hombrew"
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        green "Updating Homebrew"
+        brew update
+    fi
+    }
 ###############################################################################
 # install prerequisites
+check_brew
 checkit clojure
 checkit lein leiningen
 checkit npm
@@ -90,6 +91,9 @@ repo_name="https://github.com/${user_name}/${site_name}"
 # setup repo
 git clone https://github.com/skeptycal/clojure_site $site_name
 cd $site_name
+# Rename remote repo. if you wish to remove the remote, use this:
+#   git rm -rf .git && git init
+remote rename origin upstream
 rm -rf .git
 git init
 hub create
