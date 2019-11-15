@@ -4,7 +4,7 @@
 
 <img src="resources/images/webpack.png" alt="webpack logo" height=50>
 
-<img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50 align='right'>
+<img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50>
 
 ---
 
