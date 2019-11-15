@@ -2,9 +2,7 @@
 
 > This is my about me page, available on [GitHub](https://skeptycal.github.io/clojure_site/). It was made using a [Webpack](https://webpack.js.org/) and Clojure. [Why Clojure?](https://clojure.org/about/rationale)
 
-<img src="resources/images/webpack.png" alt="webpack logo" height=50>
-
-<img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50>
+<img src="resources/images/webpack.png" alt="webpack logo" height=50> <img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50>
 
 ---
 
@@ -23,20 +21,19 @@ Make sure you have. Any version will likely work fine ...
 If you run into permission problems with npm (not just with this project ... this is a problem with many non-rvm installs), run this terminal command to make sure npm global repo permissions are sufficient:
 `sudo chown -R $(id -un):$(id -gn) $(npm root -g)`
 
-## Quickstart
+## Quickstart (macOS)
 
  Run the `setup_macos.sh` if you use macOS ...
 
-```bash
-chmod 755 setup_macos.sh
-./setup_macos.sh
-```
+This will do everything!
 
 or take the long way around ...
 
-## Setup
+---
 
-### Setup local project and git repo
+## Setup for linux and others ... ymmv
+
+- Setup local project and git repo
 
 ```bash
 # choose a repo name for your 'about me' page
@@ -50,7 +47,7 @@ git clone https://github.com/skeptycal/clojure_site $site_name
 cd $site_name
 ```
 
-### Setup Github remote repository:
+- Setup Github remote repository:
 
 ```bash
 # Rename remote repo. if you wish to remove the remote, use this:
@@ -90,16 +87,17 @@ make build
 ### Deploy to GitHub Pages:
 
 ```bash
-make build
 make github
 
 ```
 
-Deploy to Google Cloud (account required):
+### Deploy to Google Cloud (account required):
 
 ```bash
 make deploy
 ```
+
+---
 
 ### Contributions
 
