@@ -6,7 +6,7 @@
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/skeptycal.svg?label=%40skeptycal&style=social) ![GitHub followers](https://img.shields.io/github/followers/skeptycal.svg?style=social) ![Keybase PGP](https://img.shields.io/keybase/pgp/skeptycal?label=Keybase%20PGP&style=social)
 
-> This is my about me page, available on [GitHub](https://skeptycal.github.io/clojure_site/). It was made using a [Webpack](https://webpack.js.org/) and Clojure. [Why Clojure?](https://clojure.org/about/rationale)
+> This is my about me page, available on [GitHub](https://skeptycal.github.io/clojure_site/). It was made using [Webpack](https://webpack.js.org/) and Clojure. [Why Clojure?](https://clojure.org/about/rationale)
 
 <img src="resources/images/webpack.png" alt="webpack logo" height=50> <img src="resources/images/clojure-logo-120b.png" alt="clojure logo" height=50>
 
@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-Make sure you have. Any version will likely work fine ...
+Make sure you have these prerequisites installed. Any similar version will likely work fine ...
 
 | Tool                                                  | Version I used   |
 | ----------------------------------------------------- | ---------------- |
